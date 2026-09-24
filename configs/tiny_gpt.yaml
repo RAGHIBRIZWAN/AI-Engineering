@@ -1,0 +1,44 @@
+# Model Configuration (Tiny GPT architecture)
+model:
+  vocab_size: 65           # Size of character vocabulary (Tiny Shakespeare default)
+  context_length: 128      # Maximum sequence length (block size / context window)
+  d_model: 128             # Embedding dimension / hidden dimension
+  n_heads: 4               # Number of attention heads (d_head = d_model / n_heads = 32)
+  n_layers: 4              # Number of Transformer blocks
+  ffn_dim: 512             # Feed-forward hidden dimension (4 * d_model)
+  dropout: 0.1             # Dropout probability for regularizing representations
+  bias: false              # Whether to include bias terms in linear projections
+  pos_encoding: "sinusoidal" # Options: "sinusoidal" (default milestone) or "learned"
+  tie_weights: false       # Whether to tie token embedding and lm_head weights
+
+# Training Hyperparameters
+training:
+  batch_size: 64           # Number of sequences processed in parallel
+  learning_rate: 0.001     # Peak learning rate for AdamW optimizer (1e-3)
+  weight_decay: 0.01       # Weight decay for regularization
+  beta1: 0.9               # AdamW beta1
+  beta2: 0.99              # AdamW beta2
+  grad_clip: 1.0           # Maximum gradient norm for gradient clipping
+  max_iters: 1500          # Total training iterations / steps
+  warmup_iters: 100        # Linear warmup iterations
+  lr_decay_iters: 1500     # Cosine decay iterations
+  min_lr: 0.0001           # Minimum learning rate (0.1 * lr)
+  eval_interval: 150       # How often to evaluate validation loss
+  eval_iters: 30           # Number of batches to average for evaluation
+  checkpoint_dir: "checkpoints" # Directory to save checkpoints
+  log_dir: "outputs/logs"       # Directory to save logs
+  sample_interval: 300     # How often to generate sample text during training
+  seed: 42                 # Random seed for reproducibility
+  device: "auto"           # Device: "auto", "cuda", or "cpu"
+
+# Data Configuration
+data:
+  data_path: "data/input.txt" # Path to raw domain corpus
+  train_split: 0.9            # Fraction of data for training (90% train, 10% val)
+
+# Text Generation Defaults
+generation:
+  max_new_tokens: 150      # Default number of tokens to generate
+  temperature: 0.8         # Sampling temperature (0.0 = greedy, >1.0 = more creative)
+  top_k: 40                # Top-k tokens to consider during sampling (null to disable)
+  top_p: 0.9               # Nucleus sampling probability threshold (null to disable)

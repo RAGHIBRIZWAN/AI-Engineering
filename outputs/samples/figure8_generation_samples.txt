@@ -1,0 +1,46 @@
+=== Figure 8: MiniGPT Generated Samples (5 Fixed Prompts) ===
+
+--- PROMPT_1 ---
+Prompt: KING LEAR:
+
+Result:
+KING LEAR:
+I see the my from grown,
+How it the or theinge; what ay, our me so boria,
+I do yet he my she go her 
+
+--- PROMPT_2 ---
+Prompt: ROMEO:
+
+Result:
+ROMEO:
+O, sir, not take and been be him: to-f us this barwile.
+
+HENRY VI:
+And a meak of scome is putt not h
+
+--- PROMPT_3 ---
+Prompt: To be, or not to be, that is the 
+Result:
+To be, or not to be, that is the shall,
+And I shall she drest death me of unto with his
+Take a fatught the havinester, but out will y
+
+--- PROMPT_4 ---
+Prompt: First Citizen:
+Before we proceed any further, 
+Result:
+First Citizen:
+Before we proceed any further, then heaven you
+spike of have any agring of Moysence:
+The part and heaved see be roth seeched all of
+
+--- PROMPT_5 ---
+Prompt: The future of artificial intelligence 
+Result:
+The future of artificial intelligence forther,
+And all thee lass of thee been to Rereit your blorford.
+
+HENRY BOKE:
+You make would Some I 
+

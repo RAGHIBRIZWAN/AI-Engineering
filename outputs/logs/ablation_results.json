@@ -1,0 +1,56 @@
+{
+  "depth_ablation": {
+    "2_layers": {
+      "num_params": 411392,
+      "val_loss": 2.6985,
+      "train_time_sec": 51.51,
+      "sample": "ROMEO:\nA:\nXY:\nEMCHEICEOTMEXLENBSBYonore iwrd my wisur os ndpbopy wi"
+    },
+    "4_layers": {
+      "num_params": 805632,
+      "val_loss": 2.651,
+      "train_time_sec": 124.36,
+      "sample": "ROMEO:\nUWh horl basan CNH:\nBot,\nRNAr anou t so s IBothe bathad inle"
+    },
+    "6_layers": {
+      "num_params": 1199872,
+      "val_loss": 2.716,
+      "train_time_sec": 160.55,
+      "sample": "ROMEO:\nTINLUE:\nWis d.\nONNTor he y naner h's he ifer, trhe thend w:"
+    }
+  },
+  "heads_ablation": {
+    "2_heads": {
+      "num_params": 805632,
+      "val_loss": 2.6622,
+      "train_time_sec": 102.79,
+      "sample": "ROMEO:\nRUIK: h s tortid wifaHdt saat s wey me;\nD thed ETIThe,in t;"
+    },
+    "4_heads": {
+      "num_params": 805632,
+      "val_loss": 2.651,
+      "train_time_sec": 110.87,
+      "sample": "ROMEO:\nUWh horl basan CNH:\nBot,\nRNAr anou t so s IBothe bathad inle"
+    },
+    "8_heads": {
+      "num_params": 805632,
+      "val_loss": 2.6591,
+      "train_time_sec": 150.84,
+      "sample": "ROMEO:\nYe d hs EURHe ond deliny me od ire le asemisathearounds so a"
+    }
+  },
+  "position_ablation": {
+    "sinusoidal": {
+      "num_params": 805632,
+      "val_loss": 2.651,
+      "train_time_sec": 120.63,
+      "sample": "ROMEO:\nUWh horl basan CNH:\nBot,\nRNAr anou t so s IBothe bathad inle"
+    },
+    "learned": {
+      "num_params": 822016,
+      "val_loss": 2.4203,
+      "train_time_sec": 108.82,
+      "sample": "ROMEO:\nES:\nOorerd dancis\nFieme, pasenenes, vait meverist serore, he"
+    }
+  }
+}

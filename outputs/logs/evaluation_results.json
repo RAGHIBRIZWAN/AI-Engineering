@@ -1,0 +1,46 @@
+{
+  "model_parameters": 805632,
+  "train_loss": 1.6596,
+  "val_loss": 1.8212,
+  "train_perplexity": 5.26,
+  "val_perplexity": 6.18,
+  "generated_samples": {
+    "prompt_1": {
+      "prompt": "KING LEAR:\n",
+      "generated": "KING LEAR:\nI see the my from grown,\nHow it the or theinge; what ay, our me so boria,\nI do yet he my she go her "
+    },
+    "prompt_2": {
+      "prompt": "ROMEO:\n",
+      "generated": "ROMEO:\nO, sir, not take and been be him: to-f us this barwile.\n\nHENRY VI:\nAnd a meak of scome is putt not h"
+    },
+    "prompt_3": {
+      "prompt": "To be, or not to be, that is the ",
+      "generated": "To be, or not to be, that is the shall,\nAnd I shall she drest death me of unto with his\nTake a fatught the havinester, but out will y"
+    },
+    "prompt_4": {
+      "prompt": "First Citizen:\nBefore we proceed any further, ",
+      "generated": "First Citizen:\nBefore we proceed any further, then heaven you\nspike of have any agring of Moysence:\nThe part and heaved see be roth seeched all of"
+    },
+    "prompt_5": {
+      "prompt": "The future of artificial intelligence ",
+      "generated": "The future of artificial intelligence forther,\nAnd all thee lass of thee been to Rereit your blorford.\n\nHENRY BOKE:\nYou make would Some I "
+    }
+  },
+  "sampling_comparison": {
+    "Greedy (T=0.0)": "GLOUCESTER:\nNow is the winter of our discontent\nThe shall the shall the shall the soul the sould\nThe shall the shall the shall the shall the stand\nT",
+    "Balanced (T=0.8, top_k=40)": "GLOUCESTER:\nNow is the winter of our discontent\nWith sucher the owill man that I prach made thesemiss\nI and to the entland terrain,--\nThink look bon",
+    "High Temperature (T=1.5)": "GLOUCESTER:\nNow is the winter of our discontent\nwither'd sempects'e\nAnd litly muchal-sencause's, uch othis awe.\n\nSecrave you heepond upas good;\nUfou"
+  },
+  "failure_analysis": {
+    "failure_mode_1_greedy_loop": {
+      "title": "Degenerate Repetition Loop in Greedy Decoding",
+      "observation": "When temperature is set to 0.0, the model tends to fall into rigid cyclical repeating phrases because the argmax choice locks into a periodic attractor.",
+      "mitigation": "Stochastic temperature sampling with Top-K (k=40) or Top-P (p=0.9) filtering."
+    },
+    "failure_mode_2_domain_mismatch": {
+      "title": "Severe Semantic Hallucination on Modern / Out-of-Domain Prompts",
+      "observation": "When prompted with 'The future of artificial intelligence', the model attempts to map modern concepts into 16th-century vocabulary ('art', 'thee', 'thou', 'king'), failing to produce factual modern explanations.",
+      "mitigation": "Training on general web text or domain-specific corpora, or fine-tuning with instruction data."
+    }
+  }
+}
