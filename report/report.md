@@ -1,6 +1,6 @@
 # Building a Small LLM from Scratch: A Deep Dive into Transformer Foundations, Causal Language Modeling, and Scaled Dot-Product Attention
 
-**Author:** AI Engineering Research Group  
+**Authors / Team:** Muhammad Umar (Student ID: 23K-0023), Raghib Rizwan Rabbani (Student ID: 23K-0012), Syed Fahad Fahaeem Shah (Student ID: 23K-0062)  
 **Dataset:** Tiny Shakespeare (40,000 lines, ~1.11 MB)  
 **Architecture:** Decoder-Only Causal Transformer (MiniGPT)  
 **Deliverables:** Open Repository, Trained Checkpoints, Interactive Colab, REST API, Unit Test Suite  
@@ -8,7 +8,7 @@
 ---
 
 ## Abstract
-In this investigation, we design, implement, train, evaluate, and package a miniature GPT-style causal language model from scratch in PyTorch without loading any pretrained model weights or relying on black-box abstractions. We examine why the Transformer architecture revolutionized sequence modeling by replacing sequential recurrence with parallel self-attention. We provide explicit manual hand calculations verifying scaled dot-product attention and causal masking, track tensor shapes throughout multi-head projections, train a 0.81M-parameter model on the Tiny Shakespeare corpus, perform three controlled ablation studies (depth, heads, and positional encoding), conduct a rigorous failure analysis, and package the final model behind a production-grade FastAPI service and CLI.
+In this investigation, we design, implement, train, evaluate, and package a miniature GPT-style causal language model from scratch in PyTorch without loading any pretrained model weights or relying on black-box abstractions. We examine why the Transformer architecture revolutionized sequence modeling by replacing sequential recurrence with parallel self-attention. We provide explicit manual hand calculations verifying scaled dot-product attention and causal masking, track tensor shapes throughout multi-head projections, train a 0.81M-parameter model on the Tiny Shakespeare corpus, perform four controlled ablation studies (depth, heads, positional encoding, and context length), conduct a rigorous failure analysis, and package the final model behind a production-grade FastAPI service and CLI.
 
 ---
 
@@ -40,6 +40,7 @@ Final Layer Normalization & Language Modeling Head
   ▼
 Vocabulary Logits -> Cross-Entropy Loss / Autoregressive Generation
 ```
+*(A standalone visual schematic of the Pre-LayerNorm Transformer Block and full model dataflow is available at `outputs/figures/architecture_diagram.png`.)*
 
 ---
 
@@ -193,46 +194,86 @@ The **Tiny Shakespeare** dataset contains 1,115,394 characters (~40,000 lines) a
 - **Final Loss:** Train 1.8340, Val 1.8812.
 - **Perplexity:** Reduced from $66.8$ to $\mathbf{6.56}$.
 - **Total Wall-Clock Time:** ~5.4 minutes.
+- **Model Parameters & Layer Breakdown:** 805,632 parameters *(see Figure 5 (`outputs/figures/figure5_model_summary.png`) for the captured model summary and layer breakdown card).*
 
 ### 6.2 Generation Quality Across 5 Fixed Prompts (Figure 8)
 1. **Prompt 1 (`KING LEAR:\n`):**  
-   *Generated:* "KING LEAR:\nWhat say you to the matter, sir? I have heard thy voice, and my heart doth bleed for thee..."
+   *Generated:*  
+   ```text
+   KING LEAR:
+   I see the my from grown,
+   How it the or theinge; what ay, our me so boria,
+   I do yet he my she go her
+   ```
 2. **Prompt 2 (`ROMEO:\n`):**  
-   *Generated:* "ROMEO:\nLady, come from that nest of death, and let us hence; for beauty's star hath faded in the west..."
+   *Generated:*  
+   ```text
+   ROMEO:
+   O, sir, not take and been be him: to-f us this barwile.
+
+   HENRY VI:
+   And a meak of scome is putt not h
+   ```
 3. **Prompt 3 (`To be, or not to be, that is the `):**  
-   *Generated:* "To be, or not to be, that is the question that doth trouble all our thoughts, whether 'tis nobler to endure..."
+   *Generated:*  
+   ```text
+   To be, or not to be, that is the shall,
+   And I shall she drest death me of unto with his
+   Take a fatught the havinester, but out will y
+   ```
 4. **Prompt 4 (`First Citizen:\nBefore we proceed any further, `):**  
-   *Generated:* "First Citizen:\nBefore we proceed any further, hear me speak. We are accounted poor citizens, the patricians good..."
+   *Generated:*  
+   ```text
+   First Citizen:
+   Before we proceed any further, then heaven you
+   spike of have any agring of Moysence:
+   The part and heaved see be roth seeched all of
+   ```
 5. **Prompt 5 (`The future of artificial intelligence `):**  
-   *Generated:* "The future of artificial intelligence is an art unknown to these fair lords; but by my sword, thy counsel shall be heard..."
+   *Generated:*  
+   ```text
+   The future of artificial intelligence forther,
+   And all thee lass of thee been to Rereit your blorford.
+
+   HENRY BOKE:
+   You make would Some I
+   ```
 
 ---
 
 ## 7. Controlled Ablation Studies (Figure 9)
-We executed three controlled ablation experiments:
+We executed four controlled ablation experiments (visualized together in Figure 9, with dedicated sequence scaling telemetry in `outputs/figures/context_length_ablation.png`):
 
 ### Ablation 1: Depth (Layers $N \in \{2, 4, 6\}$)
-| Layers ($N$) | Parameters | Validation Loss | Training Time (500 steps) |
+| Layers ($N$) | Parameters | Validation Loss | Training Time (200 steps) |
 | :---: | :---: | :---: | :---: |
-| **2 Layers** | 410,752 | 2.2410 | 48.2s |
-| **4 Layers (Baseline)** | 805,632 | 1.9821 | 93.4s |
-| **6 Layers** | 1,200,512 | 1.8950 | 141.6s |
-*Interpretation:* Increasing depth from 2 to 6 layers monotonically reduces validation loss by enabling richer hierarchical feature representations across multi-layer attention compositions.
+| **2 Layers** | 411,392 | 2.6985 | 51.5s |
+| **4 Layers (Baseline)** | 805,632 | 2.6510 | 124.4s |
+| **6 Layers** | 1,199,872 | 2.7160 | 160.6s |
+*Interpretation:* 4 layers achieved the best validation loss. Surprisingly, 6 layers overfits slightly at only 200 steps — the increased capacity demands more iterations to converge — confirming that depth alone does not guarantee improvement under a fixed short training budget.
 
 ### Ablation 2: Multi-Head Splitting ($h \in \{2, 4, 8\}$)
 | Heads ($h$) | Head Dim ($d_k$) | Parameters | Validation Loss |
 | :---: | :---: | :---: | :---: |
-| **2 Heads** | 64 | 805,632 | 2.0142 |
-| **4 Heads (Baseline)** | 32 | 805,632 | 1.9821 |
-| **8 Heads** | 16 | 805,632 | 2.0018 |
-*Interpretation:* 4 heads achieved the optimal trade-off. 8 heads over-partitions the 128-dimensional embedding ($d_k=16$), degrading head representational capacity.
+| **2 Heads** | 64 | 805,632 | 2.6622 |
+| **4 Heads (Baseline)** | 32 | 805,632 | 2.6510 |
+| **8 Heads** | 16 | 805,632 | 2.6591 |
+*Interpretation:* 4 heads achieved the optimal trade-off. 8 heads over-partitions the 128-dimensional embedding ($d_k=16$), degrading per-head representational capacity. All three configurations share identical parameter counts as only the head-splitting structure changes.
 
 ### Ablation 3: Positional Encoding (Sinusoidal vs. Learned)
 | Positional Strategy | Parameters | Validation Loss |
 | :---: | :---: | :---: |
-| **Sinusoidal (Vaswani et al.)** | 805,632 | 1.9821 |
-| **Learned (GPT-2 style)** | 822,016 | 1.9794 |
-*Interpretation:* Learned position embeddings achieved slightly lower loss (-0.0027), but sinusoidal encodings require zero additional trainable parameters and extrapolate better to longer context lengths.
+| **Sinusoidal (Vaswani et al.)** | 805,632 | 2.6510 |
+| **Learned (GPT-2 style)** | 822,016 | 2.4203 |
+*Interpretation:* Learned position embeddings achieved substantially lower loss (−0.231), adding only 16,384 parameters (one entry per position × 128 dimensions). This gap suggests positional structure is actively learned rather than merely injected at the 200-step mark, though sinusoidal encodings remain preferable when sequence-length generalization is required.
+
+### Ablation 4: Context Length ($T \in \{64, 128, 256\}$ Tokens, Batch Size = 64)
+| Context Length ($T$) | Parameters | Validation Loss | Throughput (tok/s) | Training Time (200 steps) | Peak RSS (MB) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **64 Context** | 805,632 | 2.6430 | 1,418.3 | 577.6s (~9.6m) | 315.9 MB |
+| **128 Context (Baseline)** | 805,632 | 2.6510 | 1,282.6 | 1,277.4s (~21.3m) | 333.3 MB |
+| **256 Context** | 805,632 | 2.6714 | 1,078.4 | 3,038.6s (~50.6m) | 219.1 MB |
+*Interpretation:* All three runs were executed strictly with an identical batch size of 64 across 200 iterations for methodological consistency. As context length quadruples from 64 to 256 tokens, training time grows super-linearly from 577.6s to 3,038.6s due to the quadratic $O(T^2)$ computational complexity of scaled dot-product attention on CPU, resulting in a gradual decrease in throughput from 1,418.3 to 1,078.4 tokens/second. The validation losses remain tightly clustered around 2.64–2.67 across 200 steps.
 
 ---
 
@@ -251,6 +292,7 @@ The model is packaged into two production-grade interfaces:
    ```bash
    python -m src.generate --prompt "The future of artificial intelligence" --max-new-tokens 80 --temperature 0.8
    ```
+   *(See Figure 10 (`outputs/figures/figure10_cli_inference.png`) for the captured CLI inference terminal verification card).*
 2. **FastAPI REST Service:**
    ```bash
    uvicorn src.api:app --host 0.0.0.0 --port 8000
@@ -264,3 +306,15 @@ The model is packaged into two production-grade interfaces:
 
 ## 10. Conclusion
 This project demonstrated the end-to-end viability of training a compact 0.81M-parameter Transformer causal language model from scratch. By validating scaled dot-product attention through hand calculations, verifying tensor shapes, enforcing causal masking, and analyzing ablations, we demonstrated why modern LLMs are capable of learning rich domain syntax and autoregressive generation without reliance on external pretrained weights.
+
+---
+
+## References
+
+1. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). *Attention Is All You Need*. Advances in Neural Information Processing Systems (NeurIPS 2017), 30. [arXiv:1706.03762](https://arxiv.org/abs/1706.03762).
+2. Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., & Sutskever, I. (2019). *Language Models are Unsupervised Multitask Learners*. OpenAI Technical Report (GPT-2).
+3. Karpathy, A. (2022). *nanoGPT: The simplest, fastest repository for training/finetuning medium-sized GPTs*. GitHub repository: [https://github.com/karpathy/nanoGPT](https://github.com/karpathy/nanoGPT).
+4. Karpathy, A. (2023). *Let's build GPT: from scratch, in code, spelled out*. YouTube Tutorial & Video Lecture: [https://youtu.be/kCc8FmEb1nY](https://youtu.be/kCc8FmEb1nY).
+5. Hendrycks, D., & Gimpel, K. (2016). *Gaussian Error Linear Units (GELUs)*. arXiv preprint [arXiv:1606.08415](https://arxiv.org/abs/1606.08415).
+6. Ba, J. L., Kiros, J. R., & Hinton, G. E. (2016). *Layer Normalization*. arXiv preprint [arXiv:1607.06450](https://arxiv.org/abs/1607.06450).
+7. Loshchilov, I., & Hutter, F. (2017). *Decoupled Weight Decay Regularization (AdamW)*. International Conference on Learning Representations (ICLR 2019). [arXiv:1711.05101](https://arxiv.org/abs/1711.05101).

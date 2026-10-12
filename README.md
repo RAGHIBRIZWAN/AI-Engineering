@@ -1,5 +1,10 @@
 # MiniGPT: Building a Small LLM from Scratch
 
+**Authors / Team:**
+- **Muhammad Umar** (Student ID: 23K-0023)
+- **Raghib Rizwan Rabbani** (Student ID: 23K-0012)
+- **Syed Fahad Fahaeem Shah** (Student ID: 23K-0062)
+
 A clean, modular, and fully tested implementation of a **decoder-only causal Transformer language model** built from first principles in PyTorch without using pretrained weights or high-level abstractions like Hugging Face `AutoModelForCausalLM`.
 
 Trained on the **Tiny Shakespeare** dataset (~1.11 MB, 40,000 lines), this model demonstrates end-to-end understanding of scaled dot-product attention, multi-head projections, causal masking, positional encodings, and autoregressive generation.
@@ -41,7 +46,7 @@ transformer-gpt-assignment/
 ├── experiments/
 │   ├── __init__.py
 │   ├── attention_visualization.py # Figures 1, 2, 3, 4, 7 visual generation
-│   ├── ablation.py                # 3 controlled ablations (depth, heads, pos)
+│   ├── ablation.py                # 4 controlled ablations (depth, heads, pos, context_length)
 │   └── evaluate.py                # Quantitative metrics & 5 fixed prompt samples
 ├── outputs/
 │   ├── figures/                   # All required figures (Figure 1 through 10)
@@ -64,8 +69,8 @@ transformer-gpt-assignment/
 Ensure you have Python 3.9+ installed:
 ```bash
 # Clone the repository
-git clone <repo-url>
-cd transformer-gpt-assignment
+git clone https://github.com/RAGHIBRIZWAN/AI-Engineering.git
+cd AI-Engineering
 
 # Create and activate virtual environment
 python -m venv venv
@@ -109,6 +114,8 @@ python -m src.train --config configs/tiny_gpt.yaml
 - **Wall-Clock Time:** ~5-8 minutes on modern multi-core CPUs.
 - Automatically saves `checkpoints/best_model.pt` and renders `outputs/figures/figure6_loss_curve.png`.
 
+> **Note on Model Checkpoints (Reproducibility):** Model binary weights (`best_model.pt`, `final_model.pt`) are omitted from Git tracking via `.gitignore` to avoid repository bloat. They are generated locally on-demand by running the training command above, reproducing the exact trained weights in ~5.4 minutes on CPU.
+
 ---
 
 ## Text Generation (CLI)
@@ -118,10 +125,14 @@ Generate text from any prompt using the CLI interface matching Handout Section 1
 python -m src.generate --prompt "The future of artificial intelligence" --max-new-tokens 80 --temperature 0.8
 ```
 
-**Example Terminal Output:**
+**Example Terminal Output (Captured in Figure 10):**
 ```
-Prompt: The future of artificial intelligence
-Generated: The future of artificial intelligence is an art unknown to these fair lords; but by my sword, thy counsel shall be heard...
+Prompt: The future of artificial intelligence 
+Generated: The future of artificial intelligence forther,
+And all thee lass of thee been to Rereit your blorford.
+
+HENRY BOKE:
+You make would Some I
 
 model parameters: 0.8M (805,632 total parameters)
 context length: 128
@@ -171,10 +182,11 @@ Generates:
 ```bash
 python -m experiments.ablation
 ```
-Runs the 3 required ablations:
+Runs the 4 required ablations:
 1. **Depth:** 2 vs. 4 vs. 6 Transformer blocks.
 2. **Heads:** 2 vs. 4 vs. 8 Attention heads.
 3. **Positional Encoding:** Sinusoidal vs. Learned.
+4. **Context Length:** 64 vs. 128 vs. 256
 Saves comparison plot to `outputs/figures/figure9_ablation_results.png`.
 
 ### 3. Quantitative Evaluation & 5 Fixed Prompts

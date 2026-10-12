@@ -52,6 +52,11 @@ def train_ablation_model(
         pos_encoding=pos_encoding,
     ).to(device)
 
+    import psutil
+    process = psutil.Process()
+    mem_before = process.memory_info().rss
+    peak_mem_bytes = mem_before
+
     num_params = model.get_num_params()
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
 
@@ -64,8 +69,20 @@ def train_ablation_model(
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
         optimizer.step()
+        if (step + 1) % 25 == 0 or step == max_iters - 1:
+            curr_mem = process.memory_info().rss
+            if curr_mem > peak_mem_bytes:
+                peak_mem_bytes = curr_mem
 
     train_time = time.time() - start_time
+
+    if device.type == "cuda" and torch.cuda.is_available():
+        peak_memory_mb = round(torch.cuda.max_memory_allocated() / (1024 * 1024), 2)
+    else:
+        peak_memory_mb = round(peak_mem_bytes / (1024 * 1024), 2)
+
+    total_tokens = max_iters * batch_size * context_length
+    tokens_per_sec = round(total_tokens / max(train_time, 1e-4), 1)
 
     # Evaluate validation loss
     model.eval()
@@ -87,11 +104,13 @@ def train_ablation_model(
         "num_params": num_params,
         "val_loss": round(final_val_loss, 4),
         "train_time_sec": round(train_time, 2),
+        "peak_memory_mb": peak_memory_mb,
+        "tokens_per_sec": tokens_per_sec,
         "sample": sample_text.strip(),
     }
 
 
-def run_ablations(data_path: str = "data/input.txt", iters_per_run: int = 500):
+def run_ablations(data_path: str = "data/input.txt", iters_per_run: int = 500, only_context: bool = False, render_plots: bool = False):
     device = get_device("auto")
     print(f"\n[Ablation Suite] Initializing on {device}...")
     corpus_mgr = CorpusManager(data_path)
@@ -153,22 +172,92 @@ def run_ablations(data_path: str = "data/input.txt", iters_per_run: int = 500):
         print(f"  Type: {p_type} | Params: {res['num_params']:,} | Val Loss: {res['val_loss']} | Time: {res['train_time_sec']}s")
     results["position_ablation"] = pos_results
 
+    # --- Experiment 4: Context Length (64 vs 128 vs 256) ---
+    print("\n" + "=" * 60)
+    print("Experiment 4: Context Length (64 vs 128 vs 256 Tokens)")
+    print("=" * 60)
+    context_results = {}
+    for ctx_len in [64, 128, 256]:
+        print(f"Training Context Length={ctx_len}...")
+        res = train_ablation_model(
+            corpus_mgr=corpus_mgr,
+            n_layers=4,
+            n_heads=4,
+            context_length=ctx_len,
+            pos_encoding="sinusoidal",
+            max_iters=iters_per_run,
+            device=device,
+        )
+        context_results[f"{ctx_len}_context"] = res
+        print(
+            f"  Context: {ctx_len} | Params: {res['num_params']:,} | "
+            f"Val Loss: {res['val_loss']} | Mem: {res['peak_memory_mb']}MB | "
+            f"Throughput: {res['tokens_per_sec']} tok/s | Time: {res['train_time_sec']}s"
+        )
+    results["context_length_ablation"] = context_results
+
     # Save to JSON
     os.makedirs("outputs/logs", exist_ok=True)
-    os.makedirs("outputs/figures", exist_ok=True)
     with open("outputs/logs/ablation_results.json", "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
     print("\n[Ablations Complete] Saved metrics to outputs/logs/ablation_results.json")
 
-    # Render Figure 9: Ablation Results Plots
-    render_figure9_plots(results)
+    # Render Figure 9: Ablation Results Plots only if requested (preserve existing figure by default)
+    if render_plots:
+        render_figure9_plots(results)
 
     return results
 
 
+def run_context_length_only(data_path: str = "data/input.txt", iters_per_run: int = 200):
+    """Run only the Context Length ablation and append to existing outputs/logs/ablation_results.json."""
+    device = get_device("auto")
+    print(f"\n[Context Length Ablation] Initializing on {device}...", flush=True)
+    corpus_mgr = CorpusManager(data_path)
+
+    log_path = "outputs/logs/ablation_results.json"
+    results = {}
+    if os.path.exists(log_path):
+        with open(log_path, "r", encoding="utf-8") as f:
+            results = json.load(f)
+
+    print("\n" + "=" * 60, flush=True)
+    print("Experiment 4: Context Length (64 vs 128 vs 256 Tokens)", flush=True)
+    print("=" * 60, flush=True)
+    context_results = results.get("context_length_ablation", {})
+    for ctx_len in [64, 128, 256]:
+        print(f"Training Context Length={ctx_len}...", flush=True)
+        res = train_ablation_model(
+            corpus_mgr=corpus_mgr,
+            n_layers=4,
+            n_heads=4,
+            context_length=ctx_len,
+            pos_encoding="sinusoidal",
+            max_iters=iters_per_run,
+            device=device,
+        )
+        context_results[f"{ctx_len}_context"] = res
+        print(
+            f"  Context: {ctx_len} | Params: {res['num_params']:,} | "
+            f"Val Loss: {res['val_loss']} | Mem: {res['peak_memory_mb']}MB | "
+            f"Throughput: {res['tokens_per_sec']} tok/s | Time: {res['train_time_sec']}s",
+            flush=True,
+        )
+        # Incremental save
+        results["context_length_ablation"] = context_results
+        os.makedirs("outputs/logs", exist_ok=True)
+        with open(log_path, "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=2)
+
+    print(f"\n[Context Length Ablation Complete] Saved metrics to {log_path}", flush=True)
+    return results
+
+
 def render_figure9_plots(results: dict):
-    """Render comprehensive comparison bar charts for Figure 9."""
-    fig, axes = plt.subplots(1, 3, figsize=(15, 4.5))
+    """Render comprehensive comparison bar charts for Figure 9 across all 4 ablations."""
+    has_ctx = "context_length_ablation" in results
+    n_cols = 4 if has_ctx else 3
+    fig, axes = plt.subplots(1, n_cols, figsize=(19, 4.8) if has_ctx else (15, 4.5))
 
     # 1. Depth plot
     depth_keys = list(results["depth_ablation"].keys())
@@ -206,8 +295,25 @@ def render_figure9_plots(results: dict):
         yval = bar.get_height()
         axes[2].text(bar.get_x() + bar.get_width() / 2, yval + 0.02, f"{yval:.3f}", ha="center", fontsize=10, fontweight="bold")
 
+    # 4. Context Length plot
+    if has_ctx:
+        ctx_keys = list(results["context_length_ablation"].keys())
+        ctx_labels = [k.replace("_", " ").title() for k in ctx_keys]
+        ctx_losses = [results["context_length_ablation"][k]["val_loss"] for k in ctx_keys]
+        bars4 = axes[3].bar(ctx_labels, ctx_losses, color=["#9f7aea", "#805ad5", "#6b46c1"])
+        axes[3].set_title("Experiment 4: Context Length\nvs Validation Loss", fontsize=11, fontweight="bold")
+        axes[3].set_ylabel("Validation Loss", fontsize=10)
+        axes[3].set_ylim(min(ctx_losses) - 0.2, max(ctx_losses) + 0.2)
+        for bar in bars4:
+            yval = bar.get_height()
+            axes[3].text(bar.get_x() + bar.get_width() / 2, yval + 0.02, f"{yval:.3f}", ha="center", fontsize=10, fontweight="bold")
+
+    for ax in axes:
+        ax.grid(axis="y", linestyle="--", alpha=0.5)
+
     plt.suptitle("Figure 9: MiniGPT Controlled Ablation Studies", fontsize=14, fontweight="bold")
     plt.tight_layout()
+    os.makedirs("outputs/figures", exist_ok=True)
     out_path = "outputs/figures/figure9_ablation_results.png"
     plt.savefig(out_path, dpi=300)
     plt.savefig("outputs/figures/ablation_results.png", dpi=300)
@@ -219,5 +325,22 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Run controlled ablation experiments")
     parser.add_argument("--iters", type=int, default=200, help="Training iterations per ablation variant")
+    parser.add_argument("--only-context", action="store_true", help="Run only the Context Length ablation")
+    parser.add_argument("--render-plots", action="store_true", help="Render Figure 9 plots")
+    parser.add_argument("--plots-only", action="store_true", help="Render plots from existing ablation_results.json without retraining")
     args = parser.parse_args()
-    run_ablations(iters_per_run=args.iters)
+
+    if args.plots_only:
+        log_path = "outputs/logs/ablation_results.json"
+        if os.path.exists(log_path):
+            with open(log_path, "r", encoding="utf-8") as f:
+                saved_results = json.load(f)
+            render_figure9_plots(saved_results)
+        else:
+            print(f"[Error] {log_path} not found.")
+    elif args.only_context:
+        res = run_context_length_only(iters_per_run=args.iters)
+        if args.render_plots:
+            render_figure9_plots(res)
+    else:
+        run_ablations(iters_per_run=args.iters, render_plots=args.render_plots)

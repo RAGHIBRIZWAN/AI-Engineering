@@ -52,5 +52,31 @@
       "train_time_sec": 108.82,
       "sample": "ROMEO:\nES:\nOorerd dancis\nFieme, pasenenes, vait meverist serore, he"
     }
+  },
+  "context_length_ablation": {
+    "64_context": {
+      "num_params": 805632,
+      "val_loss": 2.643,
+      "train_time_sec": 577.59,
+      "peak_memory_mb": 315.88,
+      "tokens_per_sec": 1418.3,
+      "sample": "ROMEO:\nRM:\nCWhe thed'd the poref l, EIYeird y, cimat th th athigeno"
+    },
+    "128_context": {
+      "num_params": 805632,
+      "val_loss": 2.651,
+      "train_time_sec": 1277.41,
+      "peak_memory_mb": 333.27,
+      "tokens_per_sec": 1282.6,
+      "sample": "ROMEO:\nUWh horl basan CNH:\nBot,\nRNAr anou t so s IBothe bathad inle"
+    },
+    "256_context": {
+      "num_params": 805632,
+      "val_loss": 2.6714,
+      "train_time_sec": 3038.59,
+      "peak_memory_mb": 219.13,
+      "tokens_per_sec": 1078.4,
+      "sample": "ROMEO:\nNAT:\n\nMEWhe beg acy t be m he arth f hhing ce the\nOAvat the"
+    }
   }
 }
