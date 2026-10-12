@@ -1,1 +1,0 @@
-https://medium.com/@muhammad.umar26804/building-a-small-llm-from-scratch-a-deep-dive-into-transformer-foundations-causal-language-7b7fb702a878?postPublishedType=initial
