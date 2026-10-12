@@ -8,7 +8,7 @@
 
 **Authors / Team:**
 - **Muhammad Umar** (Student ID: 23K-0023)
-- **Raghib Rizwan Rabbani** (Student ID: 23K-0012)
+- **Raghib Rizwan Rabani** (Student ID: 23K-0012)
 - **Syed Fahad Fahaeem Shah** (Student ID: 23K-0062)
 
 A clean, modular, and fully tested implementation of a **decoder-only causal Transformer language model** built from first principles in PyTorch without using pretrained weights or high-level abstractions like Hugging Face `AutoModelForCausalLM`.
