@@ -90,7 +90,6 @@ AI-Engineering/
 ├── download_model.py              # Automated Hugging Face model & tokenizer checkpoint downloader
 ├── colab_demo.ipynb               # End-to-end interactive Google Colab notebook
 ├── assignment.pdf                 # Original assignment handout specifications
-├── input.txt                      # Tiny Shakespeare corpus (root copy)
 ├── configs/
 │   └── tiny_gpt.yaml              # Hyperparameters & model architectural configuration
 ├── data/
@@ -337,6 +336,7 @@ This manual step is numerically validated against PyTorch tensor operations in `
 - **Full Report (Markdown):** [`report/report.md`](report/report.md)
 - **Publication PDF Report:** [`report/report.pdf`](report/report.pdf)
 - **Google Colab Notebook:** [`colab_demo.ipynb`](colab_demo.ipynb)
+- **Medium Article:** [Building a Small LLM from Scratch — Transformer Foundations, Causal Language Modeling & Scaled Dot-Product Attention](https://medium.com/@muhammad.umar26804/building-a-small-llm-from-scratch-a-deep-dive-into-transformer-foundations-causal-language-7b7fb702a878)
 
 ---
 
