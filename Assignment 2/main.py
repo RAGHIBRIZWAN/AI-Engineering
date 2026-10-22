@@ -78,6 +78,8 @@ def config(): return {"name": os.getenv("STUDENT_NAME", "YOUR NAME"), "roll": os
 @app.get("/api/stats")
 def stats(mode: str = "mock"):
     rows = json.load(open(RES)) if os.path.exists(RES) else []
+    cfg = json.load(open("report_config.json")) if os.path.exists("report_config.json") else {}
+    rows = [r for r in rows if r["seed"] not in cfg.get(mode, {}).get("exclude_seeds", [])]
     out = []
     for slot, v in llm.SLOTS.items():
         rs = [r for r in rows if r["mode"] == mode and r["slot"] == slot]

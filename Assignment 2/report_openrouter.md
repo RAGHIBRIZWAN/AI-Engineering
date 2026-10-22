@@ -1,16 +1,15 @@
 ## Results (openrouter mode)
-Puzzles: [50, 100] (seeds), each exactly 3 moves from solved, optimum = 3, move limit = 20.
+Puzzles: [50] (seeds), each exactly 3 moves from solved, optimum = 3, move limit = 20.
 
 | Model | Runs | Success % | Avg latency/move (s) | Median latency (s) | Avg cached (s) | Avg total time (s) | Avg moves | Optimal gap | API calls | Cache hits | Invalid | Cost ($) | Avg confidence |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Jev 1.13 | 2 | 0 | 1.881 | 1.506 | 0.0000 | 28.22 | 20.0 | - | 30 | 10 | 0 | 0.00101 | 0.32 |
-| GPT-6 Luna Decisions | 1 | 0 | 5.628 | 5.628 | 0.0000 | 11.26 | 2.0 | - | 2 | 2 | 2 | 0.00000 | 0.17 |
-| Cloudflare Clef | 2 | 0 | 2.403 | 2.268 | 0.0000 | 26.43 | 19.5 | - | 22 | 17 | 0 | 0.00235 | 0.06 |
-| Claude Opus 5.5 | 2 | 50 | 15.106 | 14.532 | - | 60.42 | 4.0 | 0.0 | 8 | 0 | 0 | 0.14700 | - |
+| Jev 1.13 | 1 | 0 | 1.610 | 1.680 | 0.0000 | 20.93 | 20.0 | - | 13 | 7 | 0 | 0.00044 | 0.34 |
+| Cloudflare Clef | 1 | 0 | 2.280 | 2.125 | - | 45.60 | 20.0 | - | 20 | 0 | 0 | 0.00216 | 0.05 |
+| Claude Opus 5.5 | 1 | 0 | 17.125 | 14.944 | - | 85.62 | 5.0 | - | 5 | 0 | 0 | 0.11217 | - |
 
 ### Data for the five questions
-1. Fastest decisions (lowest avg live latency): Jev 1.13 (1.881)
-2. Highest solve rate: Claude Opus 5.5 (50.000) %
-3. Shortest solutions (lowest optimal gap, 0 = optimal): Claude Opus 5.5 (0.000)
-4. Fastest model: Jev 1.13 (1.881) | Best quality: Claude Opus 5.5 (0.000). Compare the two lines to answer.
+1. Fastest decisions (lowest avg live latency): Jev 1.13 (1.610)
+2. Highest solve rate: Jev 1.13, Cloudflare Clef, Claude Opus 5.5 (0.000) %
+3. Shortest solutions (lowest optimal gap, 0 = optimal): n/a
+4. Fastest model: Jev 1.13 (1.610) | Best quality: n/a. Compare the two lines to answer.
 5. Fast model vs frontier LLM vs hybrid: argue from the table above (latency, success, gap, cost).

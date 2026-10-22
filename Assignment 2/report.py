@@ -2,7 +2,9 @@
 from statistics import mean, median
 
 mode = sys.argv[1] if len(sys.argv) > 1 else "openrouter"
-rows = [r for r in json.load(open("results.json")) if r["mode"] == mode]
+import os
+EXCL = json.load(open("report_config.json")).get(mode, {}).get("exclude_seeds", []) if os.path.exists("report_config.json") else []
+rows = [r for r in json.load(open("results.json")) if r["mode"] == mode and r["seed"] not in EXCL]
 if not rows:
     sys.exit(f"No results for mode '{mode}'")
 LABEL = {"jev": "Jev 1.13", "luna": "GPT-6 Luna Decisions", "clef": "Cloudflare Clef", "opus": "Claude Opus 5.5"}
