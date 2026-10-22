@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rubik's Cube Race · AI Engineering Assignment 2</title>
+<style>
+:root{--bg:#e9edf3;--card:#fff;--ink:#1c2430;--mu:#7a8594;--line:#dfe5ec;--ok:#1f9d55;--okbg:#e6f6ed;--bad:#d93025;--badbg:#fdeceb;--llm:#3b6df0;--dec:#17a36b;--navy:#101828}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 "Segoe UI",system-ui,sans-serif;padding:70px 24px 48px}
+#id{position:fixed;inset:0 0 auto 0;z-index:20;background:var(--navy);color:#fff;padding:11px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-weight:600}
+#id b{color:#ffc857}
+.wrap{max-width:1000px;margin:0 auto}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.top h1{margin:0;flex:1;text-align:center;font-size:22px;letter-spacing:1.5px;font-weight:800}
+.pill{background:#000;color:#fff;border-radius:999px;padding:6px 14px;font-weight:700;font-size:13px;min-width:90px;text-align:center}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center;margin-bottom:8px}
+select,input,button{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink)}
+label{display:flex;align-items:center;gap:6px;font-weight:600;color:var(--mu)}
+button{background:var(--navy);color:#fff;font-weight:700;border:0;cursor:pointer;padding:9px 22px}
+button:disabled{opacity:.4;cursor:not-allowed}:focus-visible{outline:3px solid #ffc857;outline-offset:2px}
+#msg{color:var(--bad);font-weight:700}
+#start{font:11px Consolas,monospace;color:var(--mu);text-align:center;margin:4px 0 14px;word-break:break-all}
+#grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{position:relative;background:var(--card);border:2px solid transparent;border-radius:16px;padding:14px 16px;box-shadow:0 2px 8px rgba(16,24,40,.08);display:grid;grid-template-columns:1fr 170px;gap:6px 14px;align-items:center}
+.card.solved{border-color:var(--ok)}.card.unsolved{border-color:#f1c4c0}
+.head{grid-column:1/-1;display:flex;align-items:center;gap:8px;font-size:20px;font-weight:700}
+.logo{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;font-size:14px}
+.tag{font-size:11px;font-weight:800;color:#fff;border-radius:999px;padding:2px 9px;letter-spacing:.4px}
+.tag.llm{background:var(--llm)}.tag.dec{background:var(--dec)}
+/* 3D cube */
+.stage{height:190px;display:grid;place-items:center;perspective:700px}
+.cube{width:120px;height:120px;position:relative;transform-style:preserve-3d;transform:rotateX(-26deg) rotateY(-38deg)}
+.face{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);gap:3px;padding:3px;background:#0d0d0d;border-radius:6px;backface-visibility:hidden}
+.face i{border-radius:3px;display:block}
+.fU{transform:rotateX(90deg) translateZ(60px)}.fD{transform:rotateX(-90deg) translateZ(60px)}
+.fF{transform:translateZ(60px)}.fB{transform:rotateY(180deg) translateZ(60px)}
+.fR{transform:rotateY(90deg) translateZ(60px)}.fL{transform:rotateY(-90deg) translateZ(60px)}
+.info{text-align:center}
+.lbl{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--mu)}
+.big{font-size:30px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.1}
+.info .gap{height:10px}
+.state{grid-column:2;text-align:center;font-weight:700;color:var(--mu);font-size:15px;min-height:46px;display:grid;place-items:center}
+.state.res{border-radius:10px;padding:6px;border:2px solid}
+.state.s{color:var(--ok);background:var(--okbg);border-color:var(--ok)}.state.u{color:var(--bad);background:var(--badbg);border-color:var(--bad);font-size:14px}
+.rank{position:absolute;left:14px;bottom:56px;width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#c9ced6);box-shadow:0 2px 6px rgba(0,0,0,.3);display:grid;place-items:center;font-weight:800;font-size:15px;color:#333}
+.rank.r1{background:radial-gradient(circle at 35% 30%,#fff3b0,#e0a800)}
+.strip{grid-column:1/-1;margin-top:6px;border-radius:8px;text-align:center;font-weight:800;letter-spacing:.8px;font-size:13px;padding:6px;color:#fff;background:var(--bad)}
+.strip.ok{background:var(--ok)}
+.meta{grid-column:1/-1;font-size:11px;color:var(--mu);text-align:center;margin-top:4px}
+.hist{grid-column:1/-1;font:11px Consolas,monospace;color:var(--mu);text-align:center;word-break:break-word}
+section{margin-top:30px}
+h3{margin:0 0 4px;font-size:20px}.note{color:var(--mu);font-size:13px}
+.scroll{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:12px;margin-top:10px}
+table{border-collapse:collapse;width:100%;min-width:900px}
+th,td{padding:9px 11px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}
+th:first-child,td:first-child{text-align:left;font-weight:600}
+th{background:var(--navy);color:#fff;font-size:11px;letter-spacing:.4px}tr:last-child td{border-bottom:0}
+@media(max-width:760px){#grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="id"><span>Student: <b id="nm"></b></span><span>Roll No: <b id="rl"></b></span><span>AI Engineering · Assignment 2</span></div>
+<div class="wrap">
+  <div class="top"><span class="pill" id="bud" style="background:#fff;color:var(--mu);border:1px solid var(--line);font-weight:600">&nbsp;</span><h1>RUBIK'S CUBE RACE</h1><span class="pill" id="phase">IDLE</span></div>
+  <div class="controls">
+    <label>Mode <select id="mode"><option value="mock">Mock (no API)</option><option value="ollama">Ollama (local)</option><option value="openrouter">OpenRouter (real, limited)</option></select></label>
+    <label>Seed <input id="seed" type="number" value="1" style="width:80px"></label>
+    <button id="go">Start race</button><span id="msg"></span>
+  </div>
+  <div id="start"></div>
+  <div id="grid"></div>
+  <section>
+    <h3>This race (live)</h3>
+    <div class="note">Computed from the race on screen. "Source" shows whether answers came from live API calls or were replayed from the persistent cache.</div>
+    <div class="scroll" id="live"><p class="note" style="padding:14px">Start a race to see live results.</p></div>
+  </section>
+  <section>
+    <h3>Saved results (all finished runs)</h3>
+    <div class="note">Aggregated from results.json for the selected mode. Latency counts live API time only. Optimal gap = moves &minus; 3 (BFS optimum), solved runs only.</div>
+    <div class="scroll" id="stats"></div>
+  </section>
+</div>
+<script>
+const COL={U:'#f4f4f4',R:'#d92b2b',F:'#22a652',D:'#f5d130',L:'#f58a1f',B:'#2a6be0'};
+const LOGO={jev:['#111','J'],luna:['#0f9d7a','G'],clef:['#f6821f','C'],opus:['#d97757','O']};
+const ORD=['1ST','2ND','3RD','4TH'];
+const $=id=>document.getElementById(id),f=(x,d=2)=>x==null?'–':x.toFixed(d),avg=a=>a.length?a.reduce((p,c)=>p+c,0)/a.length:null;
+const clock=s=>`${Math.floor(s/60)}:${(s%60).toFixed(2).padStart(5,'0')}`;
+const face=(c,s,k)=>`<div class="face f${c}">${Array.from({length:9},(_,i)=>`<i style="background:${COL[s[k*9+i]]}"></i>`).join('')}</div>`;
+const cube=s=>`<div class="stage"><div class="cube">${'URFDLB'.split('').map((c,k)=>face(c,s,k)).join('')}</div></div>`;
+function ranks(ms){const fin=Object.entries(ms).filter(([,m])=>m.status=='solved');  // only solved runs are ranked, by time
+  fin.sort(([,a],[,b])=>(a.end-a.t0)-(b.end-b.t0));
+  return Object.fromEntries(fin.map(([k],i)=>[k,i]))}
+function card(k,m,rk){const t=m.t0?(m.end||Date.now()/1000)-m.t0:0,st=m.status,[bg,ch]=LOGO[k];
+  const stateTxt=st=='solved'?'<div class="state res s">SOLVED ✓</div>':st=='unsolved'?`<div class="state res u">NOT SOLVED</div>`:`<div class="state">${st=='thinking'?(m.kind=='llm'?'thinking…':'deciding…'):'waiting…'}</div>`;
+  const strip=st=='solved'?'<div class="strip ok">SOLVED IN '+m.moves.length+' MOVES</div>':st=='unsolved'?`<div class="strip">${m.reason.toUpperCase().slice(0,48)}</div>`:'';
+  return `<div class="card ${st}"><div class="head"><span class="logo" style="background:${bg}">${ch}</span>${m.label}<span class="tag ${m.kind=='llm'?'llm':'dec'}">${m.kind=='llm'?'LLM':'DECISION MODEL'}</span></div>
+  ${cube(m.state)}
+  <div class="info"><div class="lbl">TIME</div><div class="big" ${st=='unsolved'?'style="color:var(--bad)"':''}>${clock(t)}</div><div class="gap"></div><div class="lbl">MOVES</div><div class="big">${m.moves.length}</div></div>
+  ${rk!=null?`<div class="rank ${rk==0&&st=='solved'?'r1':''}">${ORD[rk]}</div>`:''}${stateTxt}${strip}
+  <div class="meta">live ${f(avg(m.lat_live),3)}s/move · calls ${m.calls} · cache ${m.hits} · invalid ${m.invalid} · $${m.cost.toFixed(5)}</div>
+  <div class="hist">${m.moves.join(' ')||'no moves yet'}</div></div>`}
+function liveTable(ms){const rows=Object.values(ms),rk=ranks(ms),keys=Object.keys(ms);
+  const src=m=>m.calls&&m.hits?'live + cache':m.calls?'live API':m.hits?'cache replay':'–';
+  $('live').innerHTML=`<table><tr><th>Model</th><th>Status</th><th>Rank</th><th>Moves</th><th>Gap</th><th>Time (s)</th><th>Avg live latency (s)</th><th>Avg cached (s)</th><th>Live calls</th><th>Cache hits</th><th>Invalid</th><th>Avg conf.</th><th>Cost ($)</th><th>Source</th></tr>`+
+  keys.map(k=>{const m=ms[k],t=m.t0?(m.end||Date.now()/1000)-m.t0:0;
+   return `<tr><td>${m.label}</td><td>${m.status}</td><td>${rk[k]!=null?'#'+(rk[k]+1):'–'}</td><td>${m.moves.length}</td><td>${m.status=='solved'?m.moves.length-3:'–'}</td><td>${t.toFixed(2)}</td><td>${f(avg(m.lat_live),3)}</td><td>${f(avg(m.lat_cached),4)}</td><td>${m.calls}</td><td>${m.hits}</td><td>${m.invalid}</td><td>${f(avg(m.conf),2)}</td><td>${m.cost.toFixed(5)}</td><td>${src(m)}</td></tr>`}).join('')+'</table>'}
+async function stats(mode){const r=await(await fetch('/api/stats?mode='+mode)).json();
+  $('stats').innerHTML=r.length?`<table><tr><th>Model</th><th>Runs</th><th>Success %</th><th>Avg latency / move (s)</th><th>Avg cached (s)</th><th>Avg total time (s)</th><th>Avg moves</th><th>Optimal gap</th><th>API calls</th><th>Cache hits</th><th>Invalid</th><th>Cost ($)</th></tr>`+
+  r.map(x=>`<tr><td>${x.label}</td><td>${x.runs}</td><td>${f(x.success,0)}</td><td>${f(x.lat_live,3)}</td><td>${f(x.lat_cached,4)}</td><td>${f(x.total_time)}</td><td>${f(x.moves,1)}</td><td>${f(x.gap,1)}</td><td>${x.calls}</td><td>${x.hits}</td><td>${x.invalid}</td><td>${x.cost.toFixed(5)}</td></tr>`).join('')+'</table>':'<p class="note" style="padding:14px">No finished runs for this mode yet.</p>'}
+async function budget(){const b=await(await fetch('/api/budget')).json();$('bud').textContent=`OpenRouter ${b.calls.total||0}/${b.total_cap} · Opus ${b.calls.opus||0}/${b.caps.opus}`}
+let last='idle';
+async function poll(){const s=await(await fetch('/api/state')).json();
+  if(s.models&&Object.keys(s.models).length){const rk=ranks(s.models);
+    $('grid').innerHTML=Object.entries(s.models).map(([k,m])=>card(k,m,rk[k])).join('');liveTable(s.models);
+    $('start').textContent=`Start state (exactly 3 moves from solved): ${s.start}`}
+  $('phase').textContent=s.status=='running'?'RACING…':s.status=='done'?'FINISHED':'IDLE';
+  $('go').disabled=s.status=='running';
+  if(last=='running'&&s.status=='done'){stats(s.mode);budget()}last=s.status}
+$('go').onclick=async()=>{const mode=$('mode').value;
+  if(mode=='openrouter'&&!confirm('This makes REAL, limited OpenRouter calls (limits are set in llm.py / .env). Continue?'))return;
+  const r=await fetch('/api/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({mode,seed:+$('seed').value})});
+  $('msg').textContent=r.ok?'':(await r.json()).detail};
+$('mode').onchange=()=>stats($('mode').value);
+(async()=>{const c=await(await fetch('/api/config')).json();$('nm').textContent=c.name;$('rl').textContent=c.roll;
+  budget();stats('mock');poll();setInterval(poll,300)})();
+</script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+2026-10-18 05:03:04 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:11 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:12 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:12 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:13 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:14 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:14 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:15 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:15 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:16 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:16 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:17 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:17 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:18 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:18 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:19 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:19 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:20 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:21 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:21 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:22 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:22 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:23 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:23 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:24 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:24 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:25 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:26 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:26 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:27 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:27 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:28 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:28 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:29 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:29 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:30 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:30 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:31 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:31 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:32 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:32 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:33 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:33 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:34 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:35 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:35 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:36 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:36 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:37 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:37 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:38 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:38 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:39 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:40 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:40 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:41 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:41 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:42 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:42 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:43 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:44 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:44 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:45 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:46 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:46 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:47 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:48 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:48 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:03:49 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:30 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:31 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:32 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:32 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:33 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:34 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:34 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:35 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:35 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:36 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:37 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:37 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:38 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:38 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:39 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:40 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:40 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:41 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:41 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:42 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:43 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:43 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:44 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:45 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:45 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:46 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:47 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:47 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:48 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:48 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:49 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:50 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:50 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:51 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:52 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:52 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:53 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:54 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:54 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:55 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:55 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:56 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:56 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:57 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:58 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:58 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:07:59 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:00 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:00 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:01 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:02 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:02 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:03 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:03 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:04 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:05 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:05 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:06 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:07 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:07 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:08 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:09 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:09 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:10 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:10 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:11 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:12 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:13 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:13 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:14 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:14 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:15 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:16 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:16 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:17 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:17 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:18 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:19 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:41 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:42 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:43 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:43 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:44 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:45 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:45 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:46 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:47 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:47 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:48 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:48 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:49 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:50 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:50 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:51 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:52 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:52 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:53 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:53 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:54 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:55 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:55 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:56 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:56 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:57 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:58 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:58 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:59 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:08:59 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:00 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:01 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:02 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:02 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:03 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:04 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:04 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:05 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:05 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:06 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:07 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:07 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:08 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:09 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:09 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:10 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:11 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:11 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:12 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:12 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:13 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:14 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:14 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:15 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:15 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:16 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:51 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:52 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:53 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:53 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:54 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:55 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:55 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:56 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:56 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:57 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:58 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:58 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:09:59 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:00 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:00 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:01 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:02 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:02 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:03 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:04 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:04 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:05 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:06 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:06 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:07 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:08 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:08 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:09 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:09 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:10 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:10 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:11 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:12 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:12 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:13 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:13 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:14 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:14 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:15 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:16 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:16 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:17 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:18 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:18 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:19 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:19 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:20 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:20 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:21 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:21 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:22 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:23 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:23 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:24 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:24 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:25 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:25 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:26 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:27 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:27 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:28 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:29 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:29 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:30 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:31 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:31 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:32 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:33 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:34 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:34 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:35 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:35 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:36 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:42 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:43 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:44 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:45 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:45 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:46 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:47 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:47 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:48 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:49 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:49 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:50 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:51 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:51 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:52 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:53 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:53 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:54 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:54 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:55 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:56 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:57 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:57 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:58 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:58 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:10:59 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:00 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:00 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:01 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:01 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:02 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:03 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:03 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:04 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:04 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:05 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:06 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:06 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:07 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:08 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:08 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:09 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:10 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:10 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:11 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:12 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:12 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:13 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:14 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:14 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:15 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:15 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:16 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:17 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:17 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:18 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:19 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:19 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:20 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:21 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:21 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:22 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:23 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:23 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:24 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:24 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:25 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:26 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:26 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:27 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:28 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:35 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:35 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:36 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:37 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:37 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:38 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:39 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:39 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:40 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:40 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:41 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:41 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:42 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:43 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:43 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:44 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:44 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:45 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:46 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:46 [LIVE ollama] jev model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:47 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:48 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:48 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:49 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:50 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:50 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:51 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:52 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:52 [LIVE ollama] luna model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:53 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:53 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:54 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:55 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:55 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:56 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:57 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:57 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:58 [LIVE ollama] clef model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:59 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:11:59 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:00 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:00 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:01 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:02 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:02 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:03 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:04 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:05 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:05 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:06 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:07 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:08 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:08 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:09 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:10 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:10 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:11 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:12:12 [LIVE ollama] opus model=gemma3:1b -> http://localhost:11434/api/chat calls_so_far={}
+2026-10-18 05:17:37 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 1, 'jev': 1}
+2026-10-18 05:17:37 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 2, 'jev': 1, 'luna': 1}
+2026-10-18 05:17:37 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 3, 'jev': 1, 'luna': 1, 'clef': 1}
+2026-10-18 05:17:37 [LIVE openrouter] opus model=anthropic/claude-opus-5.5 -> https://openrouter.ai/api/v1/chat/completions calls_so_far={'total': 4, 'jev': 1, 'luna': 1, 'clef': 1, 'opus': 1}
+2026-10-18 05:17:40 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 5, 'jev': 1, 'luna': 2, 'clef': 1, 'opus': 1}
+2026-10-18 05:17:41 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 6, 'jev': 2, 'luna': 2, 'clef': 1, 'opus': 1}
+2026-10-18 05:17:41 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 7, 'jev': 2, 'luna': 3, 'clef': 1, 'opus': 1}
+2026-10-18 05:17:42 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 8, 'jev': 2, 'luna': 3, 'clef': 2, 'opus': 1}
+2026-10-18 05:17:42 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 9, 'jev': 2, 'luna': 4, 'clef': 2, 'opus': 1}
+2026-10-18 05:17:44 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 10, 'jev': 2, 'luna': 4, 'clef': 3, 'opus': 1}
+2026-10-18 05:17:45 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 11, 'jev': 3, 'luna': 4, 'clef': 3, 'opus': 1}
+2026-10-18 05:17:46 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 12, 'jev': 3, 'luna': 4, 'clef': 4, 'opus': 1}
+2026-10-18 05:17:48 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 13, 'jev': 3, 'luna': 4, 'clef': 5, 'opus': 1}
+2026-10-18 05:17:50 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 14, 'jev': 4, 'luna': 4, 'clef': 5, 'opus': 1}
+2026-10-18 05:17:50 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 15, 'jev': 4, 'luna': 4, 'clef': 6, 'opus': 1}
+2026-10-18 05:17:51 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 16, 'jev': 5, 'luna': 4, 'clef': 6, 'opus': 1}
+2026-10-18 05:17:53 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 17, 'jev': 6, 'luna': 4, 'clef': 6, 'opus': 1}
+2026-10-18 05:17:54 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 18, 'jev': 6, 'luna': 4, 'clef': 7, 'opus': 1}
+2026-10-18 05:17:54 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 19, 'jev': 7, 'luna': 4, 'clef': 7, 'opus': 1}
+2026-10-18 05:17:56 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 20, 'jev': 8, 'luna': 4, 'clef': 7, 'opus': 1}
+2026-10-18 05:17:57 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 21, 'jev': 8, 'luna': 4, 'clef': 8, 'opus': 1}
+2026-10-18 05:17:59 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 22, 'jev': 8, 'luna': 4, 'clef': 9, 'opus': 1}
+2026-10-18 05:17:59 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 23, 'jev': 9, 'luna': 4, 'clef': 9, 'opus': 1}
+2026-10-18 05:18:01 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 24, 'jev': 10, 'luna': 4, 'clef': 9, 'opus': 1}
+2026-10-18 05:18:01 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 25, 'jev': 10, 'luna': 4, 'clef': 10, 'opus': 1}
+2026-10-18 05:18:02 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 26, 'jev': 11, 'luna': 4, 'clef': 10, 'opus': 1}
+2026-10-18 05:18:04 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 27, 'jev': 12, 'luna': 4, 'clef': 10, 'opus': 1}
+2026-10-18 05:18:04 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 28, 'jev': 12, 'luna': 4, 'clef': 11, 'opus': 1}
+2026-10-18 05:18:05 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 29, 'jev': 13, 'luna': 4, 'clef': 11, 'opus': 1}
+2026-10-18 05:18:06 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 30, 'jev': 13, 'luna': 4, 'clef': 12, 'opus': 1}
+2026-10-18 05:18:06 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 31, 'jev': 14, 'luna': 4, 'clef': 12, 'opus': 1}
+2026-10-18 05:18:07 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 32, 'jev': 14, 'luna': 4, 'clef': 13, 'opus': 1}
+2026-10-18 05:18:08 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 33, 'jev': 15, 'luna': 4, 'clef': 13, 'opus': 1}
+2026-10-18 05:18:09 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 34, 'jev': 15, 'luna': 4, 'clef': 14, 'opus': 1}
+2026-10-18 05:18:09 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 35, 'jev': 16, 'luna': 4, 'clef': 14, 'opus': 1}
+2026-10-18 05:18:10 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 36, 'jev': 16, 'luna': 4, 'clef': 15, 'opus': 1}
+2026-10-18 05:18:11 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 37, 'jev': 17, 'luna': 4, 'clef': 15, 'opus': 1}
+2026-10-18 05:18:12 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 38, 'jev': 17, 'luna': 4, 'clef': 16, 'opus': 1}
+2026-10-18 05:18:13 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 39, 'jev': 17, 'luna': 4, 'clef': 17, 'opus': 1}
+2026-10-18 05:18:15 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 40, 'jev': 17, 'luna': 4, 'clef': 18, 'opus': 1}
+2026-10-18 05:28:18 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 41, 'jev': 17, 'luna': 5, 'clef': 18, 'opus': 1}
+2026-10-18 05:28:18 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 42, 'jev': 17, 'luna': 5, 'clef': 19, 'opus': 1}
+2026-10-18 05:28:18 [LIVE openrouter] opus model=anthropic/claude-opus-5.5 -> https://openrouter.ai/api/v1/chat/completions calls_so_far={'total': 43, 'jev': 17, 'luna': 5, 'clef': 19, 'opus': 2}
+2026-10-18 05:28:20 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 44, 'jev': 17, 'luna': 6, 'clef': 19, 'opus': 2}
+2026-10-18 05:28:23 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 45, 'jev': 17, 'luna': 6, 'clef': 20, 'opus': 2}
+2026-10-18 05:28:34 [LIVE openrouter] opus model=anthropic/claude-opus-5.5 -> https://openrouter.ai/api/v1/chat/completions calls_so_far={'total': 46, 'jev': 17, 'luna': 6, 'clef': 20, 'opus': 3}
+2026-10-18 05:28:43 [LIVE openrouter] opus model=anthropic/claude-opus-5.5 -> https://openrouter.ai/api/v1/chat/completions calls_so_far={'total': 47, 'jev': 17, 'luna': 6, 'clef': 20, 'opus': 4}
+2026-10-18 07:40:45 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 48, 'jev': 17, 'luna': 7, 'clef': 20, 'opus': 4}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-18 07:40:52 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 49, 'jev': 17, 'luna': 8, 'clef': 20, 'opus': 4}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:34:32 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 50, 'jev': 18, 'luna': 8, 'clef': 20, 'opus': 4}
+2026-10-22 21:34:33 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 51, 'jev': 18, 'luna': 9, 'clef': 20, 'opus': 4}
+2026-10-22 21:34:33 [LIVE openrouter] opus model=anthropic/claude-opus-5.5 -> https://openrouter.ai/api/v1/chat/completions calls_so_far={'total': 52, 'jev': 18, 'luna': 9, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:34:35 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 53, 'jev': 18, 'luna': 10, 'clef': 20, 'opus': 5}
+2026-10-22 21:34:35 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 54, 'jev': 19, 'luna': 10, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:34:37 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 55, 'jev': 20, 'luna': 10, 'clef': 20, 'opus': 5}
+2026-10-22 21:37:15 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 56, 'jev': 20, 'luna': 11, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:37:17 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 57, 'jev': 20, 'luna': 12, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:37:39 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 58, 'jev': 20, 'luna': 13, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:37:40 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 59, 'jev': 20, 'luna': 14, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:40:34 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 60, 'jev': 20, 'luna': 15, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:40:35 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 61, 'jev': 20, 'luna': 16, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:50:19 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 62, 'jev': 20, 'luna': 17, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:50:21 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 63, 'jev': 20, 'luna': 18, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:52:38 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 64, 'jev': 20, 'luna': 19, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 21:52:39 [LIVE openrouter] luna model=openai/gpt-6-luna-decisions -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 65, 'jev': 20, 'luna': 20, 'clef': 20, 'opus': 5}
+ERROR luna: Server error '502 Bad Gateway' for url 'https://openrouter.ai/api/alpha/decisions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502 | BODY: {"error":{"message":"OpenAI refused to answer question \"next_move\"","code":502}}
+2026-10-22 22:04:04 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 66, 'jev': 21, 'luna': 20, 'clef': 20, 'opus': 5}
+2026-10-22 22:04:05 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 67, 'jev': 21, 'luna': 20, 'clef': 21, 'opus': 5}
+2026-10-22 22:04:05 [LIVE openrouter] opus model=anthropic/claude-opus-5.5 -> https://openrouter.ai/api/v1/chat/completions calls_so_far={'total': 68, 'jev': 21, 'luna': 20, 'clef': 21, 'opus': 6}
+2026-10-22 22:04:07 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 69, 'jev': 22, 'luna': 20, 'clef': 21, 'opus': 6}
+2026-10-22 22:04:08 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 70, 'jev': 22, 'luna': 20, 'clef': 22, 'opus': 6}
+2026-10-22 22:04:08 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 71, 'jev': 23, 'luna': 20, 'clef': 22, 'opus': 6}
+2026-10-22 22:04:09 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 72, 'jev': 23, 'luna': 20, 'clef': 23, 'opus': 6}
+2026-10-22 22:04:10 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 73, 'jev': 24, 'luna': 20, 'clef': 23, 'opus': 6}
+2026-10-22 22:04:11 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 74, 'jev': 25, 'luna': 20, 'clef': 23, 'opus': 6}
+2026-10-22 22:04:11 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 75, 'jev': 25, 'luna': 20, 'clef': 24, 'opus': 6}
+2026-10-22 22:04:13 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 76, 'jev': 26, 'luna': 20, 'clef': 24, 'opus': 6}
+2026-10-22 22:04:13 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 77, 'jev': 26, 'luna': 20, 'clef': 25, 'opus': 6}
+2026-10-22 22:04:14 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 78, 'jev': 27, 'luna': 20, 'clef': 25, 'opus': 6}
+2026-10-22 22:04:15 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 79, 'jev': 27, 'luna': 20, 'clef': 26, 'opus': 6}
+2026-10-22 22:04:16 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 80, 'jev': 28, 'luna': 20, 'clef': 26, 'opus': 6}
+2026-10-22 22:04:17 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 81, 'jev': 28, 'luna': 20, 'clef': 27, 'opus': 6}
+2026-10-22 22:04:18 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 82, 'jev': 29, 'luna': 20, 'clef': 27, 'opus': 6}
+2026-10-22 22:04:19 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 83, 'jev': 30, 'luna': 20, 'clef': 27, 'opus': 6}
+2026-10-22 22:04:20 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 84, 'jev': 30, 'luna': 20, 'clef': 28, 'opus': 6}
+2026-10-22 22:04:20 [LIVE openrouter] opus model=anthropic/claude-opus-5.5 -> https://openrouter.ai/api/v1/chat/completions calls_so_far={'total': 85, 'jev': 30, 'luna': 20, 'clef': 28, 'opus': 7}
+2026-10-22 22:04:21 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 86, 'jev': 31, 'luna': 20, 'clef': 28, 'opus': 7}
+2026-10-22 22:04:22 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 87, 'jev': 32, 'luna': 20, 'clef': 28, 'opus': 7}
+2026-10-22 22:04:24 [LIVE openrouter] jev model=typesafe/jev-1.13 -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 88, 'jev': 33, 'luna': 20, 'clef': 28, 'opus': 7}
+2026-10-22 22:04:24 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 89, 'jev': 33, 'luna': 20, 'clef': 29, 'opus': 7}
+2026-10-22 22:04:26 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 90, 'jev': 33, 'luna': 20, 'clef': 30, 'opus': 7}
+2026-10-22 22:04:28 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 91, 'jev': 33, 'luna': 20, 'clef': 31, 'opus': 7}
+2026-10-22 22:04:30 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 92, 'jev': 33, 'luna': 20, 'clef': 32, 'opus': 7}
+2026-10-22 22:04:34 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 93, 'jev': 33, 'luna': 20, 'clef': 33, 'opus': 7}
+2026-10-22 22:04:35 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 94, 'jev': 33, 'luna': 20, 'clef': 34, 'opus': 7}
+2026-10-22 22:04:37 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 95, 'jev': 33, 'luna': 20, 'clef': 35, 'opus': 7}
+2026-10-22 22:04:38 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 96, 'jev': 33, 'luna': 20, 'clef': 36, 'opus': 7}
+2026-10-22 22:04:41 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 97, 'jev': 33, 'luna': 20, 'clef': 37, 'opus': 7}
+2026-10-22 22:04:44 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 98, 'jev': 33, 'luna': 20, 'clef': 38, 'opus': 7}
+2026-10-22 22:04:47 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 99, 'jev': 33, 'luna': 20, 'clef': 39, 'opus': 7}
+2026-10-22 22:04:49 [LIVE openrouter] clef model=cloudflare/clef -> https://openrouter.ai/api/alpha/decisions calls_so_far={'total': 100, 'jev': 33, 'luna': 20, 'clef': 40, 'opus': 7}
+2026-10-22 22:04:51 [LIVE openrouter] opus model=anthropic/claude-opus-5.5 -> https://openrouter.ai/api/v1/chat/completions calls_so_far={'total': 101, 'jev': 33, 'luna': 20, 'clef': 40, 'opus': 8}
+2026-10-22 22:05:05 [LIVE openrouter] opus model=anthropic/claude-opus-5.5 -> https://openrouter.ai/api/v1/chat/completions calls_so_far={'total': 102, 'jev': 33, 'luna': 20, 'clef': 40, 'opus': 9}
+2026-10-22 22:05:21 [LIVE openrouter] opus model=anthropic/claude-opus-5.5 -> https://openrouter.ai/api/v1/chat/completions calls_so_far={'total': 103, 'jev': 33, 'luna': 20, 'clef': 40, 'opus': 10}
