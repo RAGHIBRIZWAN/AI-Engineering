@@ -1,6 +1,6 @@
 # Cube Arena: fast decision models vs a frontier LLM
 
-**Student:** Raghib Rizwan Rabani  |  **Roll No:** 23k-0012  |  **Course:** AI Engineering, Assignment 02
+**Student:** Raghib Rizwan Rabani  |  **Roll No:** 23k-0012  |  **Course:** AI Engineering
 
 ## Demo recording
 
