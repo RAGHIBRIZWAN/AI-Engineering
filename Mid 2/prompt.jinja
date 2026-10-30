@@ -1,0 +1,24 @@
+You are a customer support classifier.
+
+Classify the ticket as one of:
+{% for category in categories %}
+- {{ category }}
+{% endfor %}
+
+Here are some examples:
+
+{% for example in examples %}
+Customer: {{ example.text }}
+Category: {{ example.category }}
+
+{% endfor %}
+
+Now classify this ticket:
+
+Customer: {{ ticket }}
+
+{%if categories[2] == "Billing"%}}
+Category: {{ "Billing" }}
+{%else%}
+Category: {{ categories[1] }}
+{%endif%}
